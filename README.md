@@ -1,21 +1,20 @@
-# React + TypeScript + Vite + shadcn/ui
+# EventNotify
 
-This is a template for a new Vite project with React, TypeScript, and shadcn/ui.
+Frontend demo for browsing structured device events and building filters with templated service-department messages.
 
-## Adding components
+**Live demo:** [koolecontrols.github.io/EventNotifyExample](https://koolecontrols.github.io/EventNotifyExample/)
 
-To add components to your app, run the following command:
+## Stack
+
+React + TypeScript + Vite + Tailwind v4 + shadcn/ui.
+
+## Develop
 
 ```bash
-npx shadcn@latest add button
+pnpm install
+pnpm dev
 ```
 
-This will place the ui components in the `src/components` directory.
+## Deploy
 
-## Using components
-
-To use the components in your app, import them as follows:
-
-```tsx
-import { Button } from "@/components/ui/button"
-```
+Pushes to `main` are built and deployed to GitHub Pages by `.github/workflows/deploy.yml`. To enable, set **Settings → Pages → Source** to "GitHub Actions" once.
